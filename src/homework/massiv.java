@@ -17,10 +17,6 @@ public class massiv {
                 System.out.println("Daxil etdiyiniz eded var");
             }
 
-            else
-                System.out.println("Daxil etdiyiniz eded yoxdur");
-
-
         }
 
 
