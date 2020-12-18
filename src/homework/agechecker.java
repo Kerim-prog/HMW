@@ -2,7 +2,7 @@ package homework;
 
 import java.util.Scanner;
 
-public class methods {
+public class agechecker {
     public static void main(String[] args) {
         System.out.print("Yaş daxil edin:");
         Scanner sc = new Scanner(System.in);
@@ -12,27 +12,6 @@ public class methods {
 
     }
 
-
-    public static int kvadrat(int a)
-    {
-        System.out.println("method" + a*a);
-
-        return a*a;
-    }
-
-    public static void sub(int element)
-    {
-        System.out.println(element +element);
-    }
-
-
-    public static int sqr(int element)
-    {
-        int a = element*element;
-        System.out.println("intern"+ +a);
-        sub(sqr(element));
-        return a;
-    }
 
     public static void checkhage(int age)
     {
