@@ -7,13 +7,13 @@ public class agechecker {
         System.out.print("Yaş daxil edin:");
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        checkhage(a);
+        checkage(a);
 
 
     }
 
 
-    public static void checkhage(int age)
+    public static void checkage(int age)
     {
         if(age>18)
         {System.out.println("olar");}
