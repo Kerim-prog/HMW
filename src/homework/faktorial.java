@@ -1,14 +1,17 @@
 package homework;
 
+import java.util.Scanner;
+
 public class faktorial {
     public static void main(String[] args) {
-        System.out.println(findFaktorial(6));
-
+        System.out.print("Eded daxil edin: ");
+        Scanner sc = new Scanner(System.in);
+        int a= sc.nextInt();
+        System.out.println("Faktorial = "+findFaktorial(a));
     }
 
     public static int findFaktorial(int a)
     {
-        if(a!=1){return a*findFaktorial(a-1);}
-        else return 1;
+         return ((a != 1) ? a*findFaktorial(a-1) : 1);
     }
 }
