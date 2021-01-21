@@ -1,9 +1,14 @@
 package homework.day.nine;
 
+import java.util.Scanner;
+
 public class DiamondOfLetters {
     public static void main(String[] args) {
 
-        printDiamond(5);
+        System.out.print("Ədəd daxil edin(half of the diamond): ");
+        Scanner sc = new Scanner(System.in);
+        int count = sc.nextInt();
+        printDiamond(count);
     }
 
     public static void printDiamond(int n){
