@@ -1,6 +1,5 @@
 package homework.day.firsttoseven;
 
-import java.awt.desktop.PreferencesEvent;
 import java.util.Scanner;
 
 public class pentagonalnumbers {
