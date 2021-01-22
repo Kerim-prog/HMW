@@ -1,4 +1,4 @@
-package lesson;
+package lesson.classes;
 
 public class Employee  {
     private Human human;

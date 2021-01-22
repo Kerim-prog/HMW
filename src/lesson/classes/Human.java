@@ -1,4 +1,4 @@
-package lesson;
+package lesson.classes;
 
 public class Human {
     public String getName() {
