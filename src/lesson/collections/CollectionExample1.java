@@ -3,18 +3,18 @@ import java.util.*;
 
 public class CollectionExample1 {
     public static void main(String[] args) {
-        List<String> ls = new ArrayList<String>();
-        ls.add("Dog");
-        ls.add("Cat");
-        ls.add("Elepphant");
-        ls.add("Monkey");
-        ls.add("Jerapah");
+        List<String> animals = new ArrayList<String>();
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Elepphant");
+        animals.add("Monkey");
+        animals.add("Jerapah");
 
-        ls.remove(3);
+        animals.remove(3);
 
-        for(int i=0;i<ls.size();i++)
+        for(int i=0;i<animals.size();i++)
         {
-            System.out.println(ls.get(i));
+            System.out.println(animals.get(i));
         }
 
     }
