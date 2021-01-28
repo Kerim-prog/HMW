@@ -1,4 +1,5 @@
 package javagroup;
+import java.util.*;
 
 public class Human {
     /*
@@ -17,7 +18,7 @@ IQ level (iq) (a whole number from 1 to 100))
     private Pet pet;
     private Human mother;
     private Human father;
-    private String[][] schedule;
+    private Map<String,String> schedule;
 
     public Human() {
     }
@@ -36,7 +37,7 @@ IQ level (iq) (a whole number from 1 to 100))
         this.father = father;
     }
 
-    public Human(String name, String surname, int year, int iq, Pet pet, Human mother, Human father, String[][] schedule) {
+    public Human(String name, String surname, int year, int iq, Pet pet, Human mother, Human father, Map<String,String> schedule) {
         this.name = name;
         this.surname = surname;
         this.year = year;
@@ -103,11 +104,11 @@ IQ level (iq) (a whole number from 1 to 100))
         this.father = father;
     }
     
-    public String[][] getSchedule() {
+    public Map<String,String> getSchedule() {
         return schedule;
     }
 
-    public void setSchedule(String[][] schedule) {
+    public void setSchedule(Map<String,String> schedule) {
         this.schedule = schedule;
     }
 

@@ -1,6 +1,6 @@
 package javagroup;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class Pet {
 
@@ -8,7 +8,7 @@ public class Pet {
     private String nickname;
     private int age;
     private int  trickLevel;
-    private String[] habits;
+    private Set<String> habits;
 
     public Pet() {
     }
@@ -18,7 +18,7 @@ public class Pet {
         this.nickname = nickname;
     }
 
-    public Pet(String species, String nickname, int age, int trickLevel, String[] habits) {
+    public Pet(String species, String nickname, int age, int trickLevel, Set<String> habits) {
         this.species = species;
         this.nickname = nickname;
         this.age = age;
@@ -60,11 +60,11 @@ public class Pet {
         else System.out.println("Səhv daxil etmisiniz (1-100 arası tam ədəd daxil edin)");
     }
 
-    public String[] getHabits() {
+    public Set<String> getHabits() {
         return habits;
     }
 
-    public void setHabits(String[] habits) {
+    public void setHabits(Set<String> habits) {
         this.habits = habits;
     }
 
@@ -88,7 +88,7 @@ public class Pet {
     }
 
     public String toString() {
-        return "dog {nickname: '" + this.nickname + "', age: " + this.age + ", tricklevel: " + this.trickLevel + ", habbits:"+ Arrays.toString(this.habits)+"}";
+        return "dog {nickname: '" + this.nickname + "', age: " + this.age + ", tricklevel: " + this.trickLevel + ", habbits:"+ this.habits+"}";
     }
 
 }
